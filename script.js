@@ -1,4 +1,3 @@
-// Smooth scrolling for navigation links
 document.querySelectorAll('.nav-links a').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -17,7 +16,6 @@ document.querySelectorAll('.nav-links a').forEach(anchor => {
     });
 });
 
-// Add animation on scroll for sections
 const sections = document.querySelectorAll('.section');
 const observerOptions = {
     threshold: 0.1
@@ -37,7 +35,6 @@ sections.forEach(section => {
     sectionObserver.observe(section);
 });
 
-// Back to Top Button
 const backToTopBtn = document.getElementById('back-to-top');
 window.addEventListener('scroll', () => {
     if (window.scrollY > 300) {
@@ -51,7 +48,6 @@ backToTopBtn.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-// Hamburger Menu Toggle
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 
@@ -67,7 +63,6 @@ hamburger.addEventListener('click', () => {
     }
 });
 
-// Contact Form Submission
 const contactForm = document.getElementById('contact-form');
 contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
